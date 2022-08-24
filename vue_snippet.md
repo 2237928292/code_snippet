@@ -34,6 +34,7 @@ BeforeUpload: function (file) {
       reader.readAsDataURL(file);
       reader.onload = function (e) {
         let newUrl = reader.result; //图片路径
+        //多选文件此处会输出多次
         console.log(newUrl)  //base64
       };
 },
